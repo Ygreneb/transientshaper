@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1">
+	<fonts>
+	</fonts>
+	<colors>
+	</colors>
+	<template background-color="~ BlackCColor" background-color-draw-style="filled and stroked" bitmap="GUI_blank" class="CViewContainer" mouse-enabled="true" name="view" opacity="1" origin="0, 0" size="558, 386" transparent="false" wants-focus="false">
+		<view angle-range="253" angle-start="0" bitmap="Knob_Atk_Fst_253" class="CAnimKnob" control-tag="AtkFast" default-value="0" height-of-one-image="104" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="60, 40" size="104, 104" sub-pixmaps="253" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1.5"/>
+		<view angle-range="253" angle-start="0" bitmap="Knob_Atk_Slw_253" class="CAnimKnob" control-tag="AtkSlow" default-value="0" height-of-one-image="104" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="60, 168" size="104, 104" sub-pixmaps="253" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1.5"/>
+		<view angle-range="253" angle-start="0" bitmap="Knob_Factor_253" class="CAnimKnob" control-tag="TransientGain" default-value="0" height-of-one-image="104" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="399, 41" size="104, 104" sub-pixmaps="253" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1.5"/>
+		<view angle-range="253" angle-start="0" bitmap="Knob_Gain_253" class="CAnimKnob" control-tag="TotalGain" default-value="0.5" height-of-one-image="104" inverse-bitmap="false" max-value="1" min-value="0" mouse-enabled="true" opacity="0.96063" origin="399, 168" size="104, 104" sub-pixmaps="253" transparent="false" value-inset="0" wants-focus="false" wheel-inc-value="0.1" zoom-factor="1.5"/>
+		<view bitmap="LED_full" class="CVuMeter" control-tag="TransientMeterL" decrease-step-value="0.1" default-value="0" max-value="1" min-value="0" mouse-enabled="false" num-led="100" off-bitmap="LED_off" opacity="1" orientation="vertical" origin="221, 57" size="25, 275" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+		<view bitmap="LED_full" class="CVuMeter" control-tag="TransientMeterR" decrease-step-value="0.1" default-value="0" max-value="1" min-value="0" mouse-enabled="false" num-led="100" off-bitmap="LED_off" opacity="1" orientation="vertical" origin="254, 57" size="25, 275" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+		<view bitmap="Btn_Solo" class="COnOffButton" control-tag="TransientSolo" default-value="0" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="84, 300" size="55, 39" transparent="false" wants-focus="true" wheel-inc-value="1"/>
+		<view bitmap="Btn_Auto" class="COnOffButton" control-tag="AutoGain" default-value="0" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="424, 300" size="55, 39" transparent="false" wants-focus="true" wheel-inc-value="1"/>
+		<view bitmap="LED_neg_full" class="CVuMeter" control-tag="TransientMeterNegL" decrease-step-value="0.1" default-value="0" max-value="1" min-value="0" mouse-enabled="false" num-led="100" off-bitmap="LED_neg_off" opacity="1" orientation="vertical" origin="221, 57" size="25, 275" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+		<view bitmap="LED_neg_full" class="CVuMeter" control-tag="TransientMeterNegR" decrease-step-value="0.1" default-value="0" max-value="1" min-value="0" mouse-enabled="false" num-led="100" off-bitmap="LED_neg_off" opacity="1" orientation="vertical" origin="254, 57" size="25, 275" transparent="false" wants-focus="true" wheel-inc-value="0.1"/>
+	</template>
+	<custom>
+		<attributes name="FocusDrawing"/>
+		<attributes Path="C:\Users\Benjamin\VST_SDK_3_7_0\my_plugins\transientshaper\resource\plug.uidesc" name="VST3Editor"/>
+		<attributes Grids="1x 1,5x 5,10x 10,12x 12,15x 15" Size="1, 1" name="UIGridController"/>
+		<attributes SelectedTemplate="view" name="UITemplateController"/>
+		<attributes EditViewScale="1" EditorSize="0, 0, 1001, 714" SplitViewSize_0_0="0.7194767441860464574077127508644480258226" SplitViewSize_0_1="0.2514534883720930258377279642445500940084" SplitViewSize_1_0="0.4956395348837209224868161072663497179747" SplitViewSize_1_1="0.4970930232558139483245440715108998119831" SplitViewSize_2_0="0.7502497502497502690488317966810427606106" SplitViewSize_2_1="0.2447552447552447663081665041318046860397" TabSwitchValue="4" Version="1" name="UIEditController"/>
+		<attributes name="UIAttributesController"/>
+		<attributes SelectedRow="13" name="UIViewCreatorDataSource"/>
+		<attributes SelectedRow="0" name="UIBitmapsDataSource"/>
+		<attributes SelectedRow="9" name="UITagsDataSource"/>
+		<attributes SelectedRow="-1" name="UIGradientsDataSource"/>
+		<attributes SelectedRow="-1" name="UIColorsDataSource"/>
+		<attributes SelectedRow="-1" name="UIFontsDataSource"/>
+	</custom>
+	<control-tags>
+		<control-tag name="AtkFast" tag="101"/>
+		<control-tag name="AtkSlow" tag="102"/>
+		<control-tag name="AutoGain" tag="112"/>
+		<control-tag name="EnvFastMeter" tag="107"/>
+		<control-tag name="EnvSlowMeter" tag="108"/>
+		<control-tag name="TotalGain" tag="105"/>
+		<control-tag name="TransientGain" tag="104"/>
+		<control-tag name="TransientMeterL" tag="109"/>
+		<control-tag name="TransientMeterNegL" tag="113"/>
+		<control-tag name="TransientMeterNegR" tag="114"/>
+		<control-tag name="TransientMeterR" tag="110"/>
+		<control-tag name="TransientSolo" tag="111"/>
+	</control-tags>
+	<bitmaps>
+		<bitmap name="Btn_Auto" path="Btn_Auto.png"/>
+		<bitmap name="Btn_Solo" path="Btn_Solo.png"/>
+		<bitmap name="GUI_Layout" path="GUI_Layout.png"/>
+		<bitmap name="GUI_blank" path="GUI_blank.png"/>
+		<bitmap name="Knob_Atk_Fst_253" path="Knob_Atk_Fst_253.png"/>
+		<bitmap name="Knob_Atk_Slw_253" path="Knob_Atk_Slw_253.png"/>
+		<bitmap name="Knob_Factor_253" path="Knob_Factor_253.png"/>
+		<bitmap name="Knob_Gain_253" path="Knob_Gain_253.png"/>
+		<bitmap name="LED_full" path="LED_full.png"/>
+		<bitmap name="LED_neg_full" path="LED_neg_full.png"/>
+		<bitmap name="LED_neg_off" path="LED_neg_off.png"/>
+		<bitmap name="LED_off" path="LED_off.png"/>
+	</bitmaps>
+	<gradients/>
+</vstgui-ui-description>
